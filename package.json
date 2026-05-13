@@ -15,5 +15,8 @@
     "astro": "^5.16.0",
     "svelte": "^5.40.0",
     "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
