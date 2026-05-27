@@ -527,6 +527,9 @@ const patternBg = `url('${bgPattern.src}')`;
     object-position: center;
     display: block;
     opacity: calc(1 - var(--reveal, 0));
+    transform: rotate(calc(var(--scroll-progress, 0) * -12deg)) scale(1.4);
+    transform-origin: center center;
+    will-change: transform;
   }
 
   .bg__strand {
