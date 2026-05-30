@@ -19,12 +19,23 @@ const ogImage = new URL('/banner.png', 'https://nexus.hackclub.com').toString();
     <link rel="icon" type="image/png" href="/icon.png" />
     <title>{title}</title>
 
+    <meta name="description" content={description} />
+
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Horizons Nexus" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://nexus.hackclub.com" />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="2806" />
+    <meta property="og:image:height" content="1664" />
+    <meta property="og:image:alt" content="Horizons Nexus — a Hack Club hackathon, June 19–21" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <script is:inline async src="https://plausible.io/js/pa-0PtRAU0rT2pFdRz5dff5Y.js"></script>
     <script is:inline>
